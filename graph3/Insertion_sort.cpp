@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <chrono>
 #include <random>
-#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 using namespace chrono;
 
@@ -34,7 +33,7 @@ int main(int argc,char *argv[]){
     mt19937 gen(rd());
     uniform_int_distribution<int> dis(0, n - 1);
     for (int i = 0; i < n; ++i) {
-        arr.push_back(gen() k);
+        arr.push_back(gen() % k);
     }
 	auto start = high_resolution_clock::now();
 	F(arr);		
