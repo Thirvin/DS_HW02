@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <chrono>
 #include <random>
-#pragma GCC optimize("O3,unroll-loops")
 using namespace std;
 using namespace chrono;
 
